@@ -1,3 +1,8 @@
+CHICKEN-API.V1
+
+## Description
+A chicken API, logs every request and error, made with EXPRESS and MONGODB
+
 ## Installation
 
 ```bash
@@ -30,6 +35,17 @@ To run the server, run the following command
 
 ### Chicken
 
+```http
+  GET /chicken - get all chicken
+```
+```http
+  GET /chicken/id - get chicken with id = id
+```
+
+```http
+  POST/PATCH /Chicken - create / update a chicken
+```
+
 | Body        | Type      | Description                                      |
 | :---------- | :-------- | :----------------------------------------------- |
 | `name`      | `string`  | The namme of the chicken                         |
@@ -38,38 +54,15 @@ To run the server, run the following command
 | `steps`     | `number`  | The number of steps the chicken has made         |
 | `isRunning` | `Boolean` | If true the service run will increment the steps |
 
-```http
-  PATCH /quizz - update a quizz
-```
-
-| Body          | Type     | Description                         |
-| :------------ | :------- | :---------------------------------- |
-| `name`        | `string` | **Required**. The name of the quizz |
-| `description` | `string` | Description of the quizz            |
-| `id`          | `string` | **Required**. The id of the quizz   |
 
 ```http
-  PATCH /quizz - delete a quizz
+  DELETE /chicken - delete a chicken
 ```
 
 | Body | Type     | Description                       |
 | :--- | :------- | :-------------------------------- |
-| `id` | `string` | **Required**. The id of the quizz |
+| `id` | `string` | **Required**. The id of the chicken to delete |
 
 ```http
-  POST /quizz/question - add a question to a quizz
+  post /chicken/run - no body required , increment every chicken with isRunning variable true
 ```
-
-| Body         | Type     | Description                          |
-| :----------- | :------- | :----------------------------------- |
-| `quizzId`    | `string` | **Required**. The id of the quizz    |
-| `questionId` | `string` | **Required**. The id of the question |
-
-```http
-  POST /quizz/question - remove a question to a quizz
-```
-
-| Body         | Type     | Description                          |
-| :----------- | :------- | :----------------------------------- |
-| `quizzId`    | `string` | **Required**. The id of the quizz    |
-| `questionId` | `string` | **Required**. The id of the question |
