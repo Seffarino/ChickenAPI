@@ -5,8 +5,9 @@ A chicken API, logs every request and error, made with EXPRESS and MONGODB test 
 
 # Structure
 -
--config - the server configuration files
--controller - the api logic middlewares
+-config - the server configuration files\n
+-controller - the api logic middlewares\n
+
 -logs - the server logs
 -middlewares - not CRUD middlewares
 -models - the database model
