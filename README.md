@@ -1,7 +1,27 @@
 CHICKEN-API.V1
 
 ## Description
-A chicken API, logs every request and error, made with EXPRESS and MONGODB
+A chicken API, logs every request and error, made with EXPRESS and MONGODB test with POSTMAN
+
+# Structure
+-
+|-config - the server configuration files
+|-controller - the api logic middlewares
+|-logs - the server logs
+|-middlewares - not CRUD middlewares
+|-models - the database model
+|-node_modules - the server logs
+|-public - for browser user 
+|-routes - all routes for CRUD operations
+|-services - all routes for CRUD operations
+|-test - all routes for CRUD operations
+|-views - for browser user 
+.env environnement variable (should've been deleted but for easy use I didn't)
+.env.test
+.env.dev
+server.js ENTRYPOINT
+
+
 
 ## Installation
 
