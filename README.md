@@ -36,14 +36,14 @@ To run the server, run the following command
 ### Chicken
 
 ```http
-  GET /chicken - get all chicken
+  GET - ROUTE:/chicken - get all chicken
 ```
 ```http
-  GET /chicken/id - get chicken with id = id
+  GET  - ROUTE:/chicken/id - get chicken with id = id
 ```
 
 ```http
-  POST/PATCH /Chicken - create / update a chicken
+  POST/PATCH - ROUTE:/chicken - create / update a chicken
 ```
 
 | Body        | Type      | Description                                      |
