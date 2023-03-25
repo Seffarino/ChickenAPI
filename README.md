@@ -4,11 +4,9 @@ CHICKEN-API.V1
 A chicken API, logs every request and error, made with EXPRESS and MONGODB test with POSTMAN
 
 # Structure
--
--config - the server configuration files\n
--controller - the api logic middlewares\n
-
--logs - the server logs
+config - the server configuration files
+controller - the api logic middlewares
+logs - the server logs
 -middlewares - not CRUD middlewares
 -models - the database model
 -node_modules - the server logs
