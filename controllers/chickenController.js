@@ -3,7 +3,7 @@ const Chicken = require("../models/Chicken");
 const asyncHandler = require("express-async-handler");
 
 // @desc Get all Chickens
-// @route GET /quizz
+// @route GET /chicken
 // @access Private
 const getAllChicken = asyncHandler(async (req, res) => {
   // Get all the chickens
@@ -82,7 +82,7 @@ const deleteChicken = asyncHandler(async (req, res) => {
     return res.status(400).json({ message: "Question ID Required" });
   }
 
-  // Does the user exist to delete?
+  // Does the chicken exist to delete?
   const chicken = await Chicken.findById(id).exec();
 
   if (!chicken) {
